@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile - Sign Language Learning App</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#8B5CF6',
+                        secondary: '#4F46E5',
+                        dark: '#1F2937',
+                    },
+                    fontFamily: {
+                        poppins: ['Poppins', 'sans-serif'],
+                    },
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-gray-100 font-poppins">
+    <!-- Header -->
+    <header class="bg-white shadow-sm">
+        <nav class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-16">
+                <div class="flex items-center">
+                    <h1 class="text-xl font-semibold text-gray-800">My Profile</h1>
+                </div>
+                <div class="flex items-center">
+                    <button class="text-gray-600 hover:text-primary">
+                        <i class="fas fa-cog text-xl"></i>
+                    </button>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
+        <!-- Profile Info -->
+        <div class="bg-white rounded-lg shadow-sm p-6 mb-8">
+            <div class="flex items-center">
+                <div class="h-20 w-20 rounded-full bg-purple-100 flex items-center justify-center">
+                    <i class="fas fa-user text-4xl text-primary"></i>
+                </div>
+                <div class="ml-6">
+                    <h2 class="text-2xl font-semibold text-gray-800">John Doe</h2>
+                    <p class="text-gray-600">Learning since March 2024</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Stats Grid -->
+        <div class="grid grid-cols-2 gap-6 mb-8">
+            <!-- Current Streak -->
+            <div class="bg-white rounded-lg shadow-sm p-6">
+                <div class="flex items-center justify-between mb-4">
+                    <h3 class="text-lg font-semibold text-gray-800">Current Streak</h3>
+                    <i class="fas fa-fire text-2xl text-orange-500"></i>
+                </div>
+                <p class="text-3xl font-bold text-gray-800">3 Days</p>
+                <p class="text-gray-600 text-sm">Keep it up!</p>
+            </div>
+
+            <!-- Signs Learned -->
+            <div class="bg-white rounded-lg shadow-sm p-6">
+                <div class="flex items-center justify-between mb-4">
+                    <h3 class="text-lg font-semibold text-gray-800">Signs Learned</h3>
+                    <i class="fas fa-check-circle text-2xl text-green-500"></i>
+                </div>
+                <p class="text-3xl font-bold text-gray-800">47</p>
+                <p class="text-gray-600 text-sm">Across 5 categories</p>
+            </div>
+        </div>
+
+        <!-- Achievements -->
+        <div class="bg-white rounded-lg shadow-sm p-6 mb-8">
+            <h2 class="text-xl font-semibold text-gray-800 mb-6">Achievements</h2>
+            <div class="grid grid-cols-2 gap-4">
+                <!-- Achievement 1 -->
+                <div class="flex items-center p-4 bg-purple-50 rounded-lg">
+                    <div class="h-12 w-12 rounded-full bg-purple-100 flex items-center justify-center">
+                        <i class="fas fa-star text-xl text-yellow-500"></i>
+                    </div>
+                    <div class="ml-4">
+                        <h3 class="font-medium text-gray-800">First Perfect Score</h3>
+                        <p class="text-sm text-gray-600">Completed Animals lesson</p>
+                    </div>
+                </div>
+
+                <!-- Achievement 2 -->
+                <div class="flex items-center p-4 bg-purple-50 rounded-lg">
+                    <div class="h-12 w-12 rounded-full bg-purple-100 flex items-center justify-center">
+                        <i class="fas fa-fire text-xl text-orange-500"></i>
+                    </div>
+                    <div class="ml-4">
+                        <h3 class="font-medium text-gray-800">3-Day Streak</h3>
+                        <p class="text-sm text-gray-600">Practice consistently</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Learning Progress -->
+        <div class="bg-white rounded-lg shadow-sm p-6">
+            <h2 class="text-xl font-semibold text-gray-800 mb-6">Learning Progress</h2>
+            <div class="space-y-4">
+                <!-- Category 1 -->
+                <div>
+                    <div class="flex justify-between text-sm text-gray-600 mb-2">
+                        <span>Animals</span>
+                        <span>80%</span>
+                    </div>
+                    <div class="w-full bg-gray-200 rounded-full h-2.5">
+                        <div class="bg-primary h-2.5 rounded-full" style="width: 80%"></div>
+                    </div>
+                </div>
+
+                <!-- Category 2 -->
+                <div>
+                    <div class="flex justify-between text-sm text-gray-600 mb-2">
+                        <span>Food</span>
+                        <span>60%</span>
+                    </div>
+                    <div class="w-full bg-gray-200 rounded-full h-2.5">
+                        <div class="bg-primary h-2.5 rounded-full" style="width: 60%"></div>
+                    </div>
+                </div>
+
+                <!-- Category 3 -->
+                <div>
+                    <div class="flex justify-between text-sm text-gray-600 mb-2">
+                        <span>Objects</span>
+                        <span>40%</span>
+                    </div>
+                    <div class="w-full bg-gray-200 rounded-full h-2.5">
+                        <div class="bg-primary h-2.5 rounded-full" style="width: 40%"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Quick Actions -->
+    <div class="fixed bottom-0 left-0 right-0 bg-white border-t border-gray-200 px-4 py-3">
+        <div class="max-w-7xl mx-auto flex justify-around">
+            <a href="index.html" class="flex flex-col items-center text-gray-600 hover:text-primary">
+                <i class="fas fa-home text-xl"></i>
+                <span class="text-xs mt-1">Home</span>
+            </a>
+            <a href="lesson.html" class="flex flex-col items-center text-gray-600 hover:text-primary">
+                <i class="fas fa-book text-xl"></i>
+                <span class="text-xs mt-1">Lessons</span>
+            </a>
+            <button class="flex flex-col items-center text-gray-600 hover:text-primary">
+                <i class="fas fa-trophy text-xl"></i>
+                <span class="text-xs mt-1">Progress</span>
+            </button>
+            <button class="flex flex-col items-center text-primary">
+                <i class="fas fa-user text-xl"></i>
+                <span class="text-xs mt-1">Profile</span>
+            </button>
+        </div>
+    </div>
+</body>
+</html>
