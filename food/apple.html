@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Apple - Sign Language Learning App</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#8B5CF6',
+                        secondary: '#4F46E5',
+                        dark: '#1F2937',
+                    },
+                    fontFamily: {
+                        poppins: ['Poppins', 'sans-serif'],
+                    },
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-gray-100 font-poppins">
+    <!-- Header -->
+    <header class="bg-white shadow-sm">
+        <nav class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-16">
+                <div class="flex items-center">
+                    <a href="index.html" class="text-gray-600 hover:text-primary">
+                        <i class="fas fa-arrow-left text-xl"></i>
+                    </a>
+                    <h1 class="ml-4 text-xl font-semibold text-gray-800">Apple Sign</h1>
+                </div>
+                <div class="flex items-center">
+                    <span class="inline-flex items-center px-3 py-1 rounded-full text-sm font-medium bg-green-100 text-green-800">
+                        <i class="fas fa-check-circle mr-1"></i>
+                        Completed
+                    </span>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
+        <!-- Video Tutorial -->
+        <div class="bg-white rounded-lg shadow-sm p-6 mb-8">
+            <h2 class="text-2xl font-semibold text-gray-800 mb-4">Learn to Sign "Apple"</h2>
+            <div class="aspect-w-16 aspect-h-9 bg-gray-100 rounded-lg mb-6">
+                <div class="flex items-center justify-center h-64 bg-gray-200 rounded-lg">
+                    <i class="fas fa-play-circle text-6xl text-gray-400"></i>
+                </div>
+            </div>
+            <div class="space-y-4">
+                <div class="flex items-start space-x-4">
+                    <div class="flex-shrink-0">
+                        <i class="fas fa-info-circle text-primary text-xl"></i>
+                    </div>
+                    <div>
+                        <h3 class="text-base font-medium text-gray-800">Sign Description</h3>
+                        <p class="text-gray-600">Make a fist with your right hand, with your thumb across your fingers. Place your knuckles against your cheek and twist your hand back and forth.</p>
+                    </div>
+                </div>
+                <div class="flex items-start space-x-4">
+                    <div class="flex-shrink-0">
+                        <i class="fas fa-lightbulb text-yellow-500 text-xl"></i>
+                    </div>
+                    <div>
+                        <h3 class="text-base font-medium text-gray-800">Tips</h3>
+                        <p class="text-gray-600">Think of rubbing an apple on your cheek to polish it. This motion mimics the natural gesture and helps remember the sign.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Practice Section -->
+        <div class="bg-white rounded-lg shadow-sm p-6 mb-8">
+            <h2 class="text-xl font-semibold text-gray-800 mb-4">Practice Time</h2>
+            <div class="grid grid-cols-2 gap-4">
+                <div class="aspect-w-16 aspect-h-9 bg-gray-100 rounded-lg">
+                    <div class="flex items-center justify-center h-48 bg-gray-200 rounded-lg">
+                        <i class="fas fa-video text-4xl text-gray-400"></i>
+                    </div>
+                </div>
+                <div class="aspect-w-16 aspect-h-9 bg-gray-100 rounded-lg">
+                    <div class="flex items-center justify-center h-48 bg-gray-200 rounded-lg">
+                        <i class="fas fa-camera text-4xl text-gray-400"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="mt-4 flex justify-center space-x-4">
+                <button class="px-6 py-2 bg-red-500 text-white rounded-full text-sm hover:bg-red-600 transition-colors">
+                    <i class="fas fa-record-vinyl mr-2"></i>
+                    Start Recording
+                </button>
+                <button class="px-6 py-2 bg-gray-200 text-gray-700 rounded-full text-sm hover:bg-gray-300 transition-colors">
+                    <i class="fas fa-redo mr-2"></i>
+                    Watch Again
+                </button>
+            </div>
+        </div>
+
+        <!-- Navigation -->
+        <div class="flex justify-between">
+            <a href="bread.html" class="px-6 py-3 bg-gray-200 text-gray-700 rounded-lg font-medium hover:bg-gray-300 transition-colors">
+                <i class="fas fa-arrow-left mr-2"></i>
+                Previous Sign
+            </a>
+            <a href="../practice.html" class="px-6 py-3 bg-primary text-white rounded-lg font-medium hover:bg-purple-700 transition-colors">
+                Practice Mode
+                <i class="fas fa-arrow-right ml-2"></i>
+            </a>
+        </div>
+    </main>
+
+    <!-- Quick Actions -->
+    <div class="fixed bottom-0 left-0 right-0 bg-white border-t border-gray-200 px-4 py-3">
+        <div class="max-w-7xl mx-auto flex justify-around">
+            <a href="../index.html" class="flex flex-col items-center text-gray-600 hover:text-primary">
+                <i class="fas fa-home text-xl"></i>
+                <span class="text-xs mt-1">Home</span>
+            </a>
+            <a href="../lesson.html" class="flex flex-col items-center text-primary">
+                <i class="fas fa-book text-xl"></i>
+                <span class="text-xs mt-1">Lessons</span>
+            </a>
+            <a href="../practice.html" class="flex flex-col items-center text-gray-600 hover:text-primary">
+                <i class="fas fa-video text-xl"></i>
+                <span class="text-xs mt-1">Practice</span>
+            </a>
+            <a href="../profile.html" class="flex flex-col items-center text-gray-600 hover:text-primary">
+                <i class="fas fa-user text-xl"></i>
+                <span class="text-xs mt-1">Profile</span>
+            </a>
+        </div>
+    </div>
+</body>
+</html>
