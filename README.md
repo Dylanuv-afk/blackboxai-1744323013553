@@ -1,8 +1,4 @@
 
-Built by https://www.blackbox.ai
-
----
-
 ```markdown
 # Sign Language Learning App
 
